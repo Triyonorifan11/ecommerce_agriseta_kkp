@@ -6,7 +6,7 @@
                     <div class="col-lg-6 d-flex align-content-center flex-wrap">
                         <h1 class="fw-bold " style="font-size: 2.8rem; --bs-text-opacity: .9;">Bagus Agriseta Mandiri</h1>
                         <small><i>Yang Dari Bagus Selalu Bagus, Yang Dari Batu Selalu Bermutu</i></small>
-                        <p class="fs-5 mt-4">Website Resmi <b>cv bagus agriseta mandiri</b></p>
+                        <p class="fs-5 mt-4">Website Resmi <b>CV. Bagus Agriseta Mandiri</b></p>
 
                     </div>
                     <div class="col-lg-6 d-lg-flex d-none ps-5 justify-content-end">

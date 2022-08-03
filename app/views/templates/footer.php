@@ -1,6 +1,6 @@
 <!-- footer -->
 <section class="">
-    <footer style="padding-top: 6rem !important; border-radius: 10% 10% 0 0;" class="bg-blue d-flex align-content-center flex-wrap margin-bottom-sm">
+    <footer style="padding-top: 6rem !important; border-radius: 10% 10% 0 0;" class="bg-blue d-flex align-content-center flex-wrap">
         <div class="container mt-5">
             <div class="row" style="margin-bottom: 7rem !important;">
 
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="col-10 d-flex align-content-center flex-wrap">
-                            <p class="p-2"><a href="#" class="nav-link" target="_blank">Youtube</a></p>
+                            <p class="p-2"><a href="https://youtube.com/channel/UCP6shUMYlgjP6DFGXcexa1A" class="nav-link" target="_blank">Youtube</a></p>
                         </div>
                     </div>
 
@@ -35,15 +35,15 @@
                             </div>
                         </div>
                         <div class="col-10 d-flex align-content-center flex-wrap">
-                            <p class="p-2"><a href="#" class="nav-link" target="__blank">Facebook</a></p>
+                            <p class="p-2"><a href="https://www.facebook.com/agristafruits.oleholeh" class="nav-link" target="_blank">Facebook</a></p>
                         </div>
                     </div>
 
                 </div>
 
 
-                <div class="col-md-4 d-none d-lg-block">
-
+                <div class="col-md-4 d-none d-lg-block mb-4">
+                    <img src="<?= ASSETS; ?>/img/logo.webp" alt="" class="rounded-circle" style="width: 70%;">
                 </div>
 
                 <div class="col-md-4 col-sm-12 mb-4">

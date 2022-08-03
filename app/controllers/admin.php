@@ -12,6 +12,7 @@ class Admin extends Controller
         $this->view('templates/footerAdmin');
     }
 
+    // ============================halaman anggota===============================
     public function dataPengguna()
     {
         $data['judul'] = "Data Pengguna";
@@ -53,5 +54,30 @@ class Admin extends Controller
             header('Location: ' . BASEURL . '/admin/dataPengguna');
             exit;
         }
+    }
+
+    // ============================Akhir halaman anggota===============================
+
+    // ============================halaman produk===============================
+    public function produk()
+    {
+        $data['judul'] = "Daftar Produk";
+        $data['navbar'] = "produk";
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/produk', $data);
+        $this->view('templates/footerAdmin');
+    }
+    // ============================Akhir halaman ptroduk===============================
+
+
+
+    // Postingan
+    public function postingan()
+    {
+        $data['judul'] = "Postingan";
+        $data['navbar'] = "postingan";
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/postingan', $data);
+        $this->view('templates/footerAdmin');
     }
 }
