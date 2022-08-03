@@ -70,4 +70,15 @@ class Database
         $this->execute();
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function rowCountdata()
+    {
+        return $this->stmt->rowCount();
+    }
+
+    public function totaldata()
+    {
+        $this->execute();
+        return $this->stmt->fetchColumn();
+    }
 }

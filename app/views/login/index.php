@@ -10,19 +10,18 @@
                                     <h3 class="text-center font-weight-light my-4">Login Admin Bagus Agriseta Mandiri</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="" method="POST">
+                                    <form action="<?= BASEURL; ?>/login/loginUser" method="POST">
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" required />
+                                            <input class="form-control" id="inputEmail" name="email_user" type="email" placeholder="name@example.com" required />
                                             <label for="inputEmail">Email address</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputPassword" type="password" placeholder="Password" required />
+                                            <input class="form-control" id="inputPassword" name="password" type="password" placeholder="Password" required />
                                             <label for="inputPassword">Password</label>
                                         </div>
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                            <label class="form-check-label" for="inputRememberPassword">Show
-                                                Password</label>
+                                            <label class="form-check-label" for="inputRememberPassword">Show Password</label>
                                         </div>
                                         <div class="d-grid gap-2">
                                             <button type="submit" class="btn btn-primary">Login</button>
