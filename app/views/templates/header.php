@@ -9,7 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?= ASSETS; ?>/css/style.css?v.2">
+    <link rel="stylesheet" href="<?= ASSETS; ?>/css/style.css?v.3">
     <link rel="icon" href="<?= ASSETS; ?>/img/icon.png" type="icon">
 </head>
 
@@ -32,12 +32,21 @@
                         <li class="nav-item">
                             <a class="nav-link <?= $data['navbar'] == 'Profil' ? "active" : ""; ?>" href="<?= BASEURL; ?>/profil">Profil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link <?= $data['navbar'] == 'Produk' ? "active" : ""; ?>" href="<?= BASEURL; ?>/produk">Produk</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link <?= $data['navbar'] == 'Produk' ? "active" : ""; ?> dropdown-toggle" href="#" id="produk" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produk
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="produk">
+                                <li><a class="dropdown-item" href="<?= BASEURL; ?>/produk">Produk Unggulan</a></li>
+                                <li><a class="dropdown-item" href="#">Produk Andalan</a></li>
+
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= BASEURL; ?>/login" target="_blank">Login</a>
+                            <a class="nav-link" href="<?= BASEURL; ?>/" target="_blank">PKL/Magang</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Wisata edukasi
@@ -47,6 +56,10 @@
                                 <li><a class="dropdown-item" href="#">Paket Wisata</a></li>
                                 <li><a class="dropdown-item" href="#">Postingan</a></li>
                             </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= BASEURL; ?>/login" target="_blank">Login</a>
                         </li>
                     </ul>
                 </div>

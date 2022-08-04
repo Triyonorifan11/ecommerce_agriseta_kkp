@@ -1,4 +1,4 @@
-<header style="padding: 5rem 0 3rem 0; border-radius: 0 0 20% 20%;" class="bg-blue shadow-lg">
+<header style="padding: 5rem 0 3rem 0; border-radius: 0 0 20% 20%;" class="bg-red shadow-lg">
     <div class="container mt-sm-3">
         <div class="col-12">
             <div class="d-flex justify-content-center mb-3">
@@ -57,7 +57,13 @@
                             <tr>
                                 <td>Bidang Usaha</td>
                                 <td>:</td>
-                                <td>Industri Pengolahan Buah dan Sayur</td>
+                                <td>
+                                    <ol>
+                                        <li>Industri Pengolahan Buah dan Sayur</li>
+                                        <li>Wisata Edukasi Kunjugan Industri</li>
+                                        <li>Wisata Petik Buah Apel, Strawberry, dan Jeruk</li>
+                                    </ol>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Alamat Kantor</td>
@@ -67,7 +73,7 @@
                             <tr>
                                 <td>No Tlp/HP</td>
                                 <td>:</td>
-                                <td>0341-5996659/081333151976</td>
+                                <td>081233202006</td>
                             </tr>
                             <tr>
                                 <td>Kode Pos</td>
@@ -77,7 +83,7 @@
                             <tr>
                                 <td>Email</td>
                                 <td>:</td>
-                                <td>huda-bagus@yahoo.co.id</td>
+                                <td>bagusagriseta2001@gmail.com</td>
                             </tr>
                             <tr>
                                 <td>Luas Tanah</td>

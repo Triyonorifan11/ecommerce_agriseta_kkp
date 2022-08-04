@@ -1,5 +1,5 @@
 <section style="--bs-bg-opacity: .09;" class="bg-secondary">
-    <header style="padding: 5rem 0 3rem 0; border-radius: 0 0 20% 20%;" class="bg-blue shadow-lg">
+    <header style="padding: 5rem 0 3rem 0; border-radius: 0 0 20% 20%;" class="bg-red shadow-lg">
         <div class="container mt-sm-3">
             <div class="col-12">
                 <div class="row">
@@ -7,6 +7,7 @@
                         <h1 class="fw-bold " style="font-size: 2.8rem; --bs-text-opacity: .9;">Bagus Agriseta Mandiri</h1>
                         <small><i>Yang Dari Bagus Selalu Bagus, Yang Dari Batu Selalu Bermutu</i></small>
                         <p class="fs-5 mt-4">Website Resmi <b>CV. Bagus Agriseta Mandiri</b></p>
+                        <p>Pusat Wisata Edukasi dan Produksi Oleh-Oleh Khas Kota Wisata Batu</p>
 
                     </div>
                     <div class="col-lg-6 d-lg-flex d-none ps-5 justify-content-end">
@@ -88,7 +89,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <a href="" class="btn btn-lg btn-success">Lihat Semua Produk</a>
+                <a href="" class="btn btn-lg btn-danger">Lihat Semua Produk</a>
             </div>
         </div>
 

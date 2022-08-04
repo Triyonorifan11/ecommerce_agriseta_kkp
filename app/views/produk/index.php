@@ -1,5 +1,5 @@
 <section>
-    <header style="padding: 5rem 0 3rem 0; border-radius: 0 0 20% 20%;" class="bg-blue shadow-lg">
+    <header style="padding: 5rem 0 3rem 0; border-radius: 0 0 20% 20%;" class="bg-red shadow-lg">
         <div class="container mt-sm-3">
             <div class="col-12">
                 <div class="row">

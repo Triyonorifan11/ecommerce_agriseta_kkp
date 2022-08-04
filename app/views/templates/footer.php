@@ -1,6 +1,6 @@
 <!-- footer -->
 <section class="">
-    <footer style="padding-top: 6rem !important; border-radius: 10% 10% 0 0;" class="bg-blue d-flex align-content-center flex-wrap">
+    <footer style="padding-top: 6rem !important; border-radius: 10% 10% 0 0;" class="bg-red d-flex align-content-center flex-wrap">
         <div class="container mt-5">
             <div class="row" style="margin-bottom: 7rem !important;">
 
@@ -56,7 +56,7 @@
             <hr>
             <div class="d-flex justify-content-center mb-3">
                 <small>
-                    Copyright &copy; 2022 | KKP UPN veteran jawa timur 2022 <span class="text-white-50">Created by </span><a href="https://www.instagram.com/nikenclst1201/" target="_blank" class="text-decoration-none">Rical</a>
+                    Copyright &copy; 2022 | Mitra Kerjasama UPN Veteran Jawa Timur 2022 <span class="text-white-50">Created by </span><a href="#" target="_blank" class="text-decoration-none">Riyo</a>
                 </small>
             </div>
         </div>

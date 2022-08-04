@@ -15,6 +15,11 @@
     color: #fff;
 }
 
+.bg-red {
+    background-color: #860000 !important;
+    color: #fff;
+}
+
 body {
     overflow-x: hidden;
 }
