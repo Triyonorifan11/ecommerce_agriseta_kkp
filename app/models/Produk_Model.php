@@ -42,9 +42,33 @@ class Produk_Model
         return $this->db->resultSet();
     }
 
+    // get produk limit
+    public function getProdukLimit()
+    {
+        $query = "SELECT * FROM {$this->table_produk} ORDER BY tgl_update DESC LIMIT 0,6";
+        $this->db->query($query);
+        return $this->db->resultSet();
+    }
+
+    public function totalProduk($label)
+    {
+        $query = "SELECT * FROM {$this->table_produk} WHERE label_produk = :label_produk";
+        $this->db->query($query);
+        $this->db->bind('label_produk', $label);
+        return $this->db->totaldata();
+    }
+
+    public function getProdukByLabel($label)
+    {
+        $query = "SELECT * FROM {$this->table_produk} WHERE label_produk = :label_produk ORDER BY tgl_update";
+        $this->db->query($query);
+        $this->db->bind('label_produk', $label);
+        return $this->db->resultSet();
+    }
+
     public function getSingleFoto($enkripsi)
     {
-        $query = "SELECT foto_produk FROM {$this->table_produk} WHERE enkripsi_produk = :enkripsi_produk";
+        $query = "SELECT * FROM {$this->table_produk} WHERE enkripsi_produk = :enkripsi_produk";
         $this->db->query($query);
         $this->db->bind('enkripsi_produk', $enkripsi);
         return $this->db->single();

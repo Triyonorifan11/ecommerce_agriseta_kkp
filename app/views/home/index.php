@@ -31,65 +31,24 @@
         <div class="col-12">
             <div class="row">
                 <div class="d-flex justify-content-around flex-wrap">
-                    <!-- 1 -->
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="<?= ASSETS; ?>/img/produk/kripik_apel.jpg" class="card-img-top" alt="..." height="200px" style="object-fit: cover; object-position: 0 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <?php foreach ($data['produk_limit'] as $produkLimit) : ?>
+                        <div class="card mb-3" style="width: 18rem;">
+                            <span class="badge bg-success" style="position: absolute;"><?= $produkLimit['label_produk']; ?></span>
+                            <img src="<?= ASSETS; ?>/img/produk/<?= $produkLimit['foto_produk']; ?>" class="card-img-top" alt="<?= $produkLimit['foto_produk']; ?>" height="200px" style="object-fit: cover; object-position: 0 0;">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $produkLimit['nama_produk']; ?></h5>
+                                <div style="height: 140px; overflow: hidden;">
+                                    <p class="card-text"><?= $produkLimit['deskripsi_produk']; ?></p>
+                                </div>
+                                <a href="<?= BASEURL; ?>/produk/detail/<?= $produkLimit['enkripsi_produk']; ?>" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="<?= ASSETS; ?>/img/produk/kripik_apel.jpg" class="card-img-top" alt="..." height="200px" style="object-fit: cover; object-position: 0 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="<?= ASSETS; ?>/img/produk/kripik_apel.jpg" class="card-img-top" alt="..." height="200px" style="object-fit: cover; object-position: 0 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="<?= ASSETS; ?>/img/produk/kripik_apel.jpg" class="card-img-top" alt="..." height="200px" style="object-fit: cover; object-position: 0 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="<?= ASSETS; ?>/img/produk/kripik_apel.jpg" class="card-img-top" alt="..." height="200px" style="object-fit: cover; object-position: 0 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3" style="width: 18rem;">
-                        <img src="<?= ASSETS; ?>/img/produk/kripik_apel.jpg" class="card-img-top" alt="..." height="200px" style="object-fit: cover; object-position: 0 0;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
 
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <a href="" class="btn btn-lg btn-danger">Lihat Semua Produk</a>
+                <a href="<?= BASEURL; ?>/produk" class="btn btn-lg btn-danger">Lihat Semua Produk</a>
             </div>
         </div>
 

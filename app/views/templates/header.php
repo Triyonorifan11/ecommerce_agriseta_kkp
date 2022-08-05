@@ -33,30 +33,28 @@
                             <a class="nav-link <?= $data['navbar'] == 'Profil' ? "active" : ""; ?>" href="<?= BASEURL; ?>/profil">Profil</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link <?= $data['navbar'] == 'Produk' ? "active" : ""; ?> dropdown-toggle" href="#" id="produk" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link <?= $data['navbar'] == 'Produk' ? "active" : ""; ?>" href="<?= BASEURL; ?>/produk" id="produk">
                                 Produk
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="produk">
-                                <li><a class="dropdown-item" href="<?= BASEURL; ?>/produk">Produk Unggulan</a></li>
-                                <li><a class="dropdown-item" href="#">Produk Andalan</a></li>
-
-                            </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= BASEURL; ?>/" target="_blank">PKL/Magang</a>
+                            <a class="nav-link <?= $data['navbar'] == 'Postingan' ? "active" : ""; ?>" href="<?= BASEURL; ?>/postingan" id="produk">
+                                Postingan
+                            </a>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Wisata edukasi
+                                Postingan
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Video</a></li>
-                                <li><a class="dropdown-item" href="#">Paket Wisata</a></li>
-                                <li><a class="dropdown-item" href="#">Postingan</a></li>
+                                <li><a class="dropdown-item" href="#">Wisata Edukasi</a></li>
+                                <li><a class="dropdown-item" href="#">PKL/Magang</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link" href="<?= BASEURL; ?>/login" target="_blank">Login</a>

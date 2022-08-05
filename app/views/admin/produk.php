@@ -33,7 +33,7 @@
                                     <form action="<?= BASEURL; ?>/admin/deleteProduk/<?= $produk['enkripsi_produk']; ?>" method="post" enctype="multipart/form-data">
                                         <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Anda Yakin akan menghapus data ini?');"><i class="fa-solid fa-trash-can"></i></button>
                                     </form>
-                                    <a href="<?= BASEURL; ?>/admin/detailProduk/<?= $produk['enkripsi_produk']; ?>" class="btn btn-info btn-sm mx-2"><i class="text-light fa-solid fa-circle-info"></i></a>
+                                    <a href="<?= BASEURL; ?>/produk/detail/<?= $produk['enkripsi_produk']; ?>" target="_blank" class="btn btn-info btn-sm mx-2"><i class="text-light fa-solid fa-circle-info"></i></a>
                                 </div>
                             </td>
                         </tr>

@@ -22,6 +22,14 @@ class Postingan_Model
         return $this->db->resultSet();
     }
 
+    public function getLabelById($id)
+    {
+        $query = "SELECT * FROM {$this->table_label} WHERE id_label = :id_label";
+        $this->db->query($query);
+        $this->db->bind('id_label', $id);
+        return $this->db->single();
+    }
+
     // tambah label
     public function add_label_postingan($data)
     {
@@ -34,6 +42,21 @@ class Postingan_Model
         return $this->db->rowCountdata();
     }
 
+    public function total_postingan()
+    {
+        $query = "SELECT * FROM {$this->table_postingan} ORDER BY tgl_update DESC";
+        $this->db->query($query);
+        return $this->db->totaldata();
+    }
+
+    public function total_postinganByLabel($label)
+    {
+        $query = "SELECT * FROM {$this->table_postingan} WHERE label_postingan = :label_postingan ORDER BY tgl_update DESC";
+        $this->db->query($query);
+        $this->db->bind('label_postingan', $label);
+        return $this->db->totaldata();
+    }
+
     // get all postingan
     public function getAllPostingan()
     {
@@ -42,9 +65,17 @@ class Postingan_Model
         return $this->db->resultSet();
     }
 
+    public function getAllPostByLabel($label)
+    {
+        $query = "SELECT * FROM {$this->table_postingan} WHERE label_postingan = :label_postingan ORDER BY tgl_update DESC";
+        $this->db->query($query);
+        $this->db->bind('label_postingan', $label);
+        return $this->db->resultSet();
+    }
+
     public function getSingleFoto($enkripsi)
     {
-        $query = "SELECT foto FROM {$this->table_postingan} WHERE enkripsi = :enkripsi";
+        $query = "SELECT * FROM {$this->table_postingan} WHERE enkripsi = :enkripsi";
         $this->db->query($query);
         $this->db->bind('enkripsi', $enkripsi);
         return $this->db->single();
