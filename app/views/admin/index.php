@@ -546,3 +546,6 @@
         </table>
     </div>
 </div>
+
+<script src="<?= ASSETS; ?>/assets/demo/chart-area-demo.js"></script>
+<script src="<?= ASSETS; ?>/assets/demo/chart-bar-demo.js"></script>

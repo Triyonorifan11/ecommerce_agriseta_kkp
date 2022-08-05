@@ -25,8 +25,18 @@ if (!isset($_SESSION['login'])) {
     <link rel="stylesheet" href="<?= ASSETS; ?>/css/style.css">
 
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- sweet alert 2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- include summernote css/js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
 </head>
 
 <body class="sb-nav-fixed">
@@ -68,7 +78,7 @@ if (!isset($_SESSION['login'])) {
                             Data Pengguna
                         </a>
 
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-solid fa-address-card"></i></div>
                             Layouts
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -78,7 +88,7 @@ if (!isset($_SESSION['login'])) {
                                 <a class="nav-link" href="layout-static.html">Static Navigation</a>
                                 <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                             </nav>
-                        </div>
+                        </div> -->
 
                         <div class="sb-sidenav-menu-heading">Interface Website</div>
                         <a class="nav-link <?= $data['navbar'] == "postingan" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin/postingan">
