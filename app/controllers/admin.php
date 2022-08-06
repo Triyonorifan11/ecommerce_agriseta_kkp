@@ -12,7 +12,7 @@ class Admin extends Controller
         $this->view('templates/footerAdmin');
     }
 
-    // ============================halaman anggota===============================
+    // ============================halaman anggota pengguna Admin===============================
     public function dataPengguna()
     {
         $data['judul'] = "Data Pengguna";
@@ -50,14 +50,45 @@ class Admin extends Controller
             exit;
         } else {
 
-            FlashMessage::setSweetAlrert('Gagal', 'Profile gagal dihapus', 'error');
+            FlashMessage::setSweetAlrert('Gagal', 'Data gagal dihapus', 'error');
             header('Location: ' . BASEURL . '/admin/dataPengguna');
             exit;
         }
     }
 
-    // ============================Akhir halaman anggota===============================
+    // ============================Akhir halaman anggota Admin===============================
 
+    // halaman customer email
+
+    public function dataCustomer()
+    {
+        $data['judul'] = "Data Customer";
+        $data['navbar'] = "customer";
+
+        // data
+        $data['customer'] = $this->model('Customer_Model')->gettAllCustomer();
+
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/dataCustomer', $data);
+        $this->view('templates/footerAdmin');
+    }
+
+    public function deleteCustomer($id)
+    {
+        if ($this->model('Customer_Model')->deleteCustomer($id) > 0) {
+
+            FlashMessage::setSweetAlrert('Berhasil', 'Customer berhasil dihapus', 'success');
+            header('Location: ' . BASEURL . '/admin/dataCustomer');
+            exit;
+        } else {
+
+            FlashMessage::setSweetAlrert('Gagal', 'Customer gagal dihapus', 'error');
+            header('Location: ' . BASEURL . '/admin/dataCustomer');
+            exit;
+        }
+    }
+
+    // akhir halaman customer email
 
 
 

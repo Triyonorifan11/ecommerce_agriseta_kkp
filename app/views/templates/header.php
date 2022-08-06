@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="<?= ASSETS; ?>/css/style.css?v.3">
     <link rel="icon" href="<?= ASSETS; ?>/img/icon.png" type="icon">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>

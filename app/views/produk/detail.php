@@ -25,6 +25,7 @@
         </div>
         <hr>
         <p>Tanggal Update : <?= $data['produk']['tgl_update']; ?></p>
+        <p>Harga Produk : Rp<?= number_format($data['produk']['harga_produk'], 0, ',', '.'); ?></p>
         <p><?= $data['produk']['deskripsi_produk']; ?></p>
         <a href="<?= BASEURL; ?>/produk" class="btn btn-secondary my-5">Kembali</a>
     </div>

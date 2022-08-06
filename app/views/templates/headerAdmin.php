@@ -72,10 +72,14 @@ if (!isset($_SESSION['login'])) {
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        <div class="sb-sidenav-menu-heading">Data User</div>
+                        <div class="sb-sidenav-menu-heading">Data Admin & Customer</div>
                         <a class="nav-link <?= $data['navbar'] == "pengguna" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin/dataPengguna">
                             <div class="sb-nav-link-icon"><i class="fas fa-solid fa-user-check"></i></div>
                             Data Pengguna
+                        </a>
+                        <a class="nav-link <?= $data['navbar'] == "customer" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin/dataCustomer">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-user-check"></i></div>
+                            Data Customer
                         </a>
 
                         <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">

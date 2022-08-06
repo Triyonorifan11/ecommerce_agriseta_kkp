@@ -124,20 +124,28 @@
 <section style=" padding: 6rem 0;">
     <div class="container">
         <div class="d-flex justify-content-center">
-            <h1 class="text-success">Ingin dihubungi Kami?</h1>
+            <h1 class="text-success">Ingin dihubungi Bagus?</h1>
         </div>
         <div class="row my-5">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <form action="" method="POST">
+                        <form action="<?= BASEURL; ?>/profil/sendCustomer" method="POST">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <label for="exampleFormControlInput1" class="form-label">Masukkan Email Anda</label>
+                                <input type="email" name="email" required class="form-control" id="exampleFormControlInput1" placeholder="Email untuk dihubungi">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="nama" class="form-label">Nama Lengkap</label>
+                                <input type="text" required name="nama_customer" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap Anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nomorWA" class="form-label">Masukkan No WhatsApp</label>
+                                <input type="number" required name="no_wa" class="form-control" id="nomorWA" placeholder="Nomor WhatsApp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Alasan untuk dihubungi</label>
+                                <textarea class="form-control" required name="alasan" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan alasan anda di sini"></textarea>
                             </div>
                             <div class="d-grid gap-2">
                                 <button class="btn  btn-success" type="submit">Kirim</button>
@@ -150,3 +158,5 @@
         </div>
     </div>
 </section>
+
+<?= FlashMessage::alertSweet(); ?>

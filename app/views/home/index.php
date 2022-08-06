@@ -33,14 +33,15 @@
                 <div class="d-flex justify-content-around flex-wrap">
                     <?php foreach ($data['produk_limit'] as $produkLimit) : ?>
                         <div class="card mb-3" style="width: 18rem;">
-                            <span class="badge bg-success" style="position: absolute;"><?= $produkLimit['label_produk']; ?></span>
+                            <span class="badge bg-warning" style="position: absolute;"><?= $produkLimit['label_produk']; ?></span>
                             <img src="<?= ASSETS; ?>/img/produk/<?= $produkLimit['foto_produk']; ?>" class="card-img-top" alt="<?= $produkLimit['foto_produk']; ?>" height="200px" style="object-fit: cover; object-position: 0 0;">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $produkLimit['nama_produk']; ?></h5>
-                                <div style="height: 140px; overflow: hidden;">
+                                <p>Rp <?= number_format($produkLimit['harga_produk'], 0, ',', '.'); ?></p>
+                                <div style="height: 155px ; overflow: hidden;">
                                     <p class="card-text"><?= $produkLimit['deskripsi_produk']; ?></p>
                                 </div>
-                                <a href="<?= BASEURL; ?>/produk/detail/<?= $produkLimit['enkripsi_produk']; ?>" class="btn btn-primary">Go somewhere</a>
+                                <a href="<?= BASEURL; ?>/produk/detail/<?= $produkLimit['enkripsi_produk']; ?>" class="btn btn-success">Detail Produk</a>
                             </div>
                         </div>
                     <?php endforeach ?>
