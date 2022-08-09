@@ -5,10 +5,10 @@
                 <h1><?= $data['judul']; ?></h1>
             </div>
             <div class="d-flex justify-content-center flex-wrap mb-5">
-                <img src="<?= ASSETS; ?>/img/logo.webp" class="rounded-circle" alt="" style="width: 40%;">
+                <img src="<?= ASSETS; ?>/img/logoBagus.jpg" class="rounded-circle" alt="" style="width: 40%;">
             </div>
             <div class="d-flex justify-content-center">
-                <h1>CV. Bagus Agriseta Mandiri</h1>
+                <h1>Bagus Agriseta Mandiri</h1>
             </div>
             <div class="d-flex justify-content-center text-center">
                 <i>Pusat Produksi Oleh-Oleh dan Wisata Edukasi Kota Wisata Batu, Jawa Timur</i>
@@ -101,7 +101,7 @@
 
             </div>
             <div class="col-lg-6 d-flex justify-content-center">
-                <img src="<?= ASSETS; ?>/img/profile.webp" alt="">
+                <img src="<?= ASSETS; ?>/img/profile.jpg" alt="" height="60%">
             </div>
         </div>
     </div>

@@ -4,10 +4,9 @@
             <div class="row">
                 <div class="col-lg-6 d-grid align-content-center flex-wrap">
                     <h1 class="fw-bold" style="font-size: 2.8rem; --bs-text-opacity: .9;"><?= $data['judul']; ?></h1>
-                    <p></p>
                 </div>
                 <div class="col-lg-6 d-lg-flex d-none ps-5 justify-content-end">
-                    <img src="<?= ASSETS; ?>/img/logo.webp" alt="" class="rounded-circle" style="width: 70%;">
+                    <img src="<?= ASSETS; ?>/img/logoBagus.jpg" alt="" class="rounded-circle" style="width: 70%;">
                 </div>
             </div>
         </div>
@@ -45,7 +44,7 @@
 
         <div class="col-lg-4">
             <div class="list-group">
-                <a class="list-group-item list-group-item-action bg-success text-light" aria-current="true">
+                <a href="#" class="list-group-item list-group-item-action bg-success text-light" aria-current="true">
                     Label Postingan
                 </a>
                 <?php foreach ($data['getLabel'] as $label) : ?>

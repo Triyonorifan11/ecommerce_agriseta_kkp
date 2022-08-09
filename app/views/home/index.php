@@ -6,12 +6,12 @@
                     <div class="col-lg-6 d-flex align-content-center flex-wrap">
                         <h1 class="fw-bold " style="font-size: 2.8rem; --bs-text-opacity: .9;">Bagus Agriseta Mandiri</h1>
                         <small><i>Yang Dari Bagus Selalu Bagus, Yang Dari Batu Selalu Bermutu</i></small>
-                        <p class="fs-5 mt-4">Website Resmi <b>CV. Bagus Agriseta Mandiri</b></p>
+                        <p class="fs-5 mt-4">Website Resmi <b>Bagus Agriseta Mandiri</b></p>
                         <p>Pusat Wisata Edukasi dan Produksi Oleh-Oleh Khas Kota Wisata Batu</p>
 
                     </div>
                     <div class="col-lg-6 d-lg-flex d-none ps-5 justify-content-end">
-                        <img src="<?= ASSETS; ?>/img/logo.webp" alt="" class="rounded-circle" style="width: 70%;">
+                        <img src="<?= ASSETS; ?>/img/logoBagus.jpg" alt="" class="rounded-circle" style="width: 70%;">
                     </div>
                 </div>
             </div>

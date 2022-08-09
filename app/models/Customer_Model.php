@@ -6,8 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 
 class Customer_Model
 {
-    private $table = 'tb_customerMail';
-    // private $nama_jabatan = 'tb_jabatan';
+    private $table = 'tb_customermail';
     private $db;
 
     public function __construct()

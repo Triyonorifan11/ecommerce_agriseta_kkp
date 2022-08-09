@@ -1,9 +1,8 @@
 <!-- footer -->
 <section class="">
-    <footer style="padding-top: 6rem !important; border-radius: 10% 10% 0 0;" class="bg-red d-flex align-content-center flex-wrap">
+    <footer style="padding-top: 4rem !important; border-radius: 10% 10% 0 0;" class="bg-red d-flex align-content-center flex-wrap">
         <div class="container mt-5">
-            <div class="row" style="margin-bottom: 7rem !important;">
-
+            <div class="row" style="margin-bottom: 4rem !important;">
                 <div class="col-md-4">
                     <h3 class="mb-4">Ikuti Media Sosial Kami</h3>
                     <div class="row mb-3">
@@ -39,11 +38,22 @@
                         </div>
                     </div>
 
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            <div class="rounded-circle bg-light d-flex justify-content-center p-2">
+                                <img src="<?= ASSETS; ?>/img/tiktok.png" alt="fb" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-10 d-flex align-content-center flex-wrap">
+                            <p class="p-2"><a href="https://www.tiktok.com/@bagus2001.official?_t=8UgB8Kjs2SI&_r=1" class="nav-link" target="_blank">TikTok</a></p>
+                        </div>
+                    </div>
+
                 </div>
 
 
                 <div class="col-md-4 d-none d-lg-block mb-4">
-                    <img src="<?= ASSETS; ?>/img/logo.webp" alt="" class="rounded-circle" style="width: 70%;">
+                    <img src="<?= ASSETS; ?>/img/foot.png" alt="" class="rounded" style="width: 70%;">
                 </div>
 
                 <div class="col-md-4 col-sm-12 mb-4">
@@ -53,7 +63,17 @@
                     <small>agristafruitsoutlet@gmail.com</small>
                 </div>
             </div>
+            <!-- 
+            <div class="d-flex justify-content-around">
+                <img src="<?= ASSETS; ?>/img/gb1.png" alt="gb1" width="10%">
+                <img src="<?= ASSETS; ?>/img/gb2.png" alt="gb2" width="10%">
+                <img src="<?= ASSETS; ?>/img/gb3.png" alt="gb3" width="10%">
+            </div> -->
+
             <hr>
+
+
+
             <div class="d-flex justify-content-center mb-3">
                 <small>
                     Copyright &copy; 2022 | Mitra Kerja sama UPN Veteran Jawa Timur 2022 <span class="text-white-50">Created by </span><a href="#" target="_blank" class="text-decoration-none">Riyo</a>

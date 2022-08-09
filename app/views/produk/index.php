@@ -8,7 +8,7 @@
                         <p>Daftar Produk Kami</p>
                     </div>
                     <div class="col-lg-6 d-lg-flex d-none ps-5 justify-content-end">
-                        <img src="<?= ASSETS; ?>/img/logo.webp" alt="" class="rounded-circle" style="width: 70%;">
+                        <img src="<?= ASSETS; ?>/img/logoBagus.jpg" alt="" class="rounded-circle" style="width: 70%;">
                     </div>
                 </div>
             </div>
@@ -36,6 +36,7 @@
                                 <img src="<?= ASSETS; ?>/img/produk/<?= $produkUnggulan['foto_produk']; ?>" class="card-img-top" alt="<?= $produkUnggulan['foto_produk']; ?>" height="200px" style="object-fit: cover; object-position: 0 0;">
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $produkUnggulan['nama_produk']; ?></h5>
+                                    <p>Harga : Rp<?= number_format($produkUnggulan['harga_produk'], 0, ',', '.'); ?></p>
                                     <div style="height: 140px; overflow: hidden;">
                                         <p class="card-text"><?= $produkUnggulan['deskripsi_produk']; ?></p>
                                     </div>
@@ -60,6 +61,7 @@
                                 <img src="<?= ASSETS; ?>/img/produk/<?= $produkLimit['foto_produk']; ?>" class="card-img-top" alt="<?= $produkLimit['foto_produk']; ?>" height="200px" style="object-fit: cover; object-position: 0 0;">
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $produkLimit['nama_produk']; ?></h5>
+                                    <p>Harga : Rp<?= $produkLimit['harga_produk']; ?></p>
                                     <div style="height: 140px; overflow: hidden;">
                                         <p class="card-text"><?= $produkLimit['deskripsi_produk']; ?></p>
                                     </div>
