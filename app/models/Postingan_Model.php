@@ -49,6 +49,13 @@ class Postingan_Model
         return $this->db->totaldata();
     }
 
+    public function totalAllPostingan()
+    {
+        $query = "SELECT COUNT(*) FROM {$this->table_postingan}";
+        $this->db->query($query);
+        return $this->db->totaldata();
+    }
+
     public function total_postinganByLabel($label)
     {
         $query = "SELECT * FROM {$this->table_postingan} WHERE label_postingan = :label_postingan ORDER BY tgl_update DESC";

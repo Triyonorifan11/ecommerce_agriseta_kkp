@@ -21,6 +21,13 @@ class Customer_Model
         return $this->db->resultSet();
     }
 
+    public function totalCustomer()
+    {
+        $query = "SELECT COUNT(*) FROM {$this->table}";
+        $this->db->query($query);
+        return $this->db->totaldata();
+    }
+
     // set kode kirim ke email
     public function sendEmailFromCustomer($data)
     {

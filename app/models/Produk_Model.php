@@ -58,6 +58,14 @@ class Produk_Model
         return $this->db->totaldata();
     }
 
+    // total produk untuk dashboard
+    public function totalAllProduk()
+    {
+        $query = "SELECT COUNT(*) FROM {$this->table_produk}";
+        $this->db->query($query);
+        return $this->db->totaldata();
+    }
+
     public function getProdukByLabel($label)
     {
         $query = "SELECT * FROM {$this->table_produk} WHERE label_produk = :label_produk ORDER BY tgl_update";

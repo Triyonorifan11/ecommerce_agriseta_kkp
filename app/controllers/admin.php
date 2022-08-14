@@ -7,6 +7,14 @@ class Admin extends Controller
     {
         $data['judul'] = "Dashboard";
         $data['navbar'] = "dashboard";
+
+        $data['total_produk'] = $this->model('Produk_Model')->totalAllProduk();
+        $data['total_postingan'] = $this->model('Postingan_Model')->totalAllPostingan();
+        $data['total_admin'] = $this->model('Anggota_Model')->totalAdmin();
+        $data['total_customer'] = $this->model('Customer_Model')->totalCustomer();
+
+        $data['customer'] = $this->model('Customer_Model')->gettAllCustomer();
+
         $this->view('templates/headerAdmin', $data);
         $this->view('admin/index', $data);
         $this->view('templates/footerAdmin');

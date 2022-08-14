@@ -19,6 +19,13 @@ class Anggota_Model
         return $this->db->resultSet();
     }
 
+    public function totalAdmin()
+    {
+        $query = "SELECT COUNT(*) FROM {$this->table}";
+        $this->db->query($query);
+        return $this->db->totaldata();
+    }
+
     public function addAnggota($data)
     {
         $nama = htmlspecialchars($data['nama']);
