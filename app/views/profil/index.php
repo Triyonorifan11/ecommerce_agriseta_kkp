@@ -60,8 +60,8 @@
                                 <td>
                                     <ol>
                                         <li>Industri Pengolahan Buah dan Sayur</li>
-                                        <li>Wisata Edukasi Kunjugan Industri</li>
-                                        <li>Wisata Petik Buah Apel, Strawberry, dan Jeruk</li>
+                                        <li>Wisata Edukasi Kunjungan Industri</li>
+                                        <li>Wisata Petik Buah Apel, Strawberry, Jambu Kristal, dan Jeruk</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -73,7 +73,7 @@
                             <tr>
                                 <td>No Tlp/HP</td>
                                 <td>:</td>
-                                <td>081233202006</td>
+                                <td>(0341) 599659 / 081233202006</td>
                             </tr>
                             <tr>
                                 <td>Kode Pos</td>
