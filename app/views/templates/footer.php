@@ -1,4 +1,4 @@
- <div class="d-flex justify-content-around my-5">
+ <div class="d-flex justify-content-evenly my-5">
      <img src="<?= ASSETS; ?>/img/gb1.png" alt="gb1" width="10%">
      <img src="<?= ASSETS; ?>/img/gb2.png" alt="gb2" width="10%">
      <img src="<?= ASSETS; ?>/img/gb3.png" alt="gb3" width="10%">

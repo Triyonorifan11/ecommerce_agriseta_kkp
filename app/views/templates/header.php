@@ -46,6 +46,12 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link <?= $data['navbar'] == 'Galery' ? "active" : ""; ?>" href="<?= BASEURL; ?>/galery" id="produk">
+                                Galery
+                            </a>
+                        </li>
+
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Postingan

@@ -17,6 +17,13 @@ class Galery_Model
         return $this->db->resultSet();
     }
 
+    public function getGaleryByLabelPostinganDistinc()
+    {
+        $query = "SELECT DISTINCT label_postingan from {$this->table}";
+        $this->db->query($query);
+        return $this->db->resultSet();
+    }
+
     public function getSingleFoto($enkripsi)
     {
         $query = "SELECT * FROM {$this->table} WHERE enkripsi = :enkripsi";
