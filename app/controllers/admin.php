@@ -258,4 +258,65 @@ class Admin extends Controller
 
 
     // ============================Akhir halaman ptroduk===============================
+
+
+    // ======================== halaman Galery =====================================//
+    public function galery()
+    {
+        $data['judul'] = "Galery";
+        $data['navbar'] = "galery";
+
+        $data['all_galery'] = $this->model('Galery_Model')->getAllGalery();
+
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/galery', $data);
+        $this->view('templates/footerAdmin');
+    }
+
+    // view add galery
+    public function addGalery()
+    {
+        $data['judul'] = "Tambah Galery";
+        $data['navbar'] = "galery";
+
+        $data['getLabel'] = $this->model('Postingan_Model')->getAllLabel();
+
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/addGalery', $data);
+        $this->view('templates/footerAdmin');
+    }
+
+    public function insertGalery()
+    {
+        if ($this->model('Galery_Model')->inserGalery($_POST) > 0) {
+            FlashMessage::setSweetAlrert('Berhasil', 'Galery berhasil ditambahkan', 'success');
+            header('Location: ' . BASEURL . '/admin/galery');
+            exit;
+        } elseif ($this->model('Galery_Model')->inserGalery($_POST) == 0) {
+            FlashMessage::setSweetAlrert('Perhatian', 'File foto terlalu besar, atau ekstensi salah, harus .png , .jpg , .jpeg , .svg', 'info');
+            header('Location: ' . BASEURL . '/admin/galery');
+            exit;
+        } else {
+
+            FlashMessage::setSweetAlrert('Gagal', 'Postingan gagal ditambahkan', 'error');
+            header('Location: ' . BASEURL . '/admin/galery');
+            exit;
+        }
+    }
+
+    // delete postingan
+    public function deletegalery($enkripsi)
+    {
+        $data['Galery'] = $this->model('Galery_Model')->getSingleFoto($enkripsi);
+        $nama_berkas_db = $data['Galery']['foto'];
+        if ($this->model('Galery_Model')->hapus_galery($enkripsi, $nama_berkas_db) > 0) {
+            FlashMessage::setSweetAlrert('Berhasil', 'Galery berhasil dihapus', 'success');
+            header('Location: ' . BASEURL . '/admin/galery');
+            exit;
+        } else {
+            FlashMessage::setSweetAlrert('Gagal', 'Galery gagal dihapus', 'error');
+            header('Location: ' . BASEURL . '/admin/galery');
+            exit;
+        }
+    }
 }

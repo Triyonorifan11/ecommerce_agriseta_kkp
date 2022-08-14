@@ -103,6 +103,10 @@ if (!isset($_SESSION['login'])) {
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Produk
                         </a>
+                        <a class="nav-link <?= $data['navbar'] == "galery" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin/galery">
+                            <div class="sb-nav-link-icon"><i class="fas fa-image"></i></div>
+                            Galery
+                        </a>
                     </div>
                 </div>
 
