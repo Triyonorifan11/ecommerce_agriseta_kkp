@@ -110,7 +110,7 @@
             <h1 class="text-success">Struktur Organisasi</h1>
         </div>
         <div class="col-12 d-flex justify-content-center mt-4">
-            <img src="<?= ASSETS; ?>/img/struktur.webp" class="shadow rounded-5" alt="struktur" width="100%">
+            <img src="<?= ASSETS; ?>/img/profile/<?= $data['profile']['struktur_organisasi']; ?>" class="shadow rounded-5" alt="struktur" width="100%">
         </div>
     </div>
 </section>

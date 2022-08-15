@@ -123,4 +123,33 @@ class Profile_Model
 
         return $this->db->rowCountdata();
     }
+
+    public function updateStruktur($data)
+    {
+        $old_foto = htmlspecialchars($data['old_struktur']);
+        $id_profile = $data['id_profile'];
+
+        // cek user pilih gambar baru atau tidak
+        if ($_FILES["old_struktur"]["error"] === 4) {
+            $struktur_organisasi = $old_foto;
+        } else {
+            $struktur_organisasi = $this->uploadFoto();
+            $pathFile = 'public/img/profile/' . $old_foto;
+            unlink($pathFile);
+        }
+
+        $query = "UPDATE {$this->table} SET 
+        struktur_organisasi = :struktur_organisasi
+        WHERE id_profile = :id_profile
+      ";
+
+        $this->db->query($query);
+
+        $this->db->bind('struktur_organisasi', $struktur_organisasi);
+        $this->db->bind('id_profile', $id_profile);
+
+        $this->db->execute();
+
+        return $this->db->rowCountdata();
+    }
 }

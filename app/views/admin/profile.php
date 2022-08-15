@@ -83,17 +83,24 @@
 
 </div>
 
-<div class="card shadow mt-3">
-    <div class="card-header bg-success text-white">
-        Struktur organisasi
-    </div>
-    <div class="card-body">
-        <img src="<?= ASSETS; ?>/img/struktur.webp" class="rounded-5" alt="struktur" width="100%">
-        <div class="input-group">
-            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+<form action="<?= BASEURL; ?>/admin/updateStruktur" method="post" enctype="multipart/form-data">
+    <div class="card shadow mt-3">
+        <div class="card-header bg-success text-white">
+            Struktur organisasi
+        </div>
+        <div class="card-body">
+            <img src="<?= ASSETS; ?>/img/profile/<?= $data['profile']['struktur_organisasi']; ?>" class="rounded-5" alt="struktur" width="100%">
+            <div class="input-group">
+                <input type="file" required name="foto_pemilik" class="form-control my-3" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <input type="hidden" name="old_struktur" id="old_foto" value="<?= $data['profile']['struktur_organisasi']; ?>">
+                <input type="hidden" name="id_profile" id="id_profile" value="<?= $data['profile']['id_profile']; ?>">
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-block btn-primary">Update Struktur</button>
+            </div>
         </div>
     </div>
-</div>
+</form>
 
 
 

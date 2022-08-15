@@ -48,6 +48,20 @@ class Admin extends Controller
         }
     }
 
+    public function updateStruktur()
+    {
+        if ($this->model('Profile_Model')->updateStruktur($_POST) > 0) {
+            FlashMessage::setSweetAlrert('Berhasil', 'Struktur berhasil diperbarui', 'success');
+            header('Location: ' . BASEURL . '/admin/profile');
+            exit;
+        } else {
+
+            FlashMessage::setSweetAlrert('Gagal', 'Struktur gagal diperbarui', 'error');
+            header('Location: ' . BASEURL . '/admin/profile');
+            exit;
+        }
+    }
+
 
     // ============================halaman anggota pengguna Admin===============================
     public function dataPengguna()
