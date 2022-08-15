@@ -19,7 +19,7 @@
     <div class="row">
         <?php if ($data['total_data_by_label'] > 0) : ?>
             <?php foreach ($data['get_all_galery_by_label'] as $galery) : ?>
-                <div class="col-3">
+                <div class="col-lg-3 col-6 my-1">
                     <img src="<?= ASSETS; ?>/img/galery/<?= $galery['foto']; ?>" alt="<?= $galery['foto']; ?>" class="border border-danger border-3 rounded" style="width: 100%;">
                 </div>
             <?php endforeach; ?>
