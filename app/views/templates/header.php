@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient shadow-sm p-2 mb-5 bg-body fixed-top">
             <div class="container-fluid container">
                 <a class="navbar-brand" href="<?= BASEURL; ?>/home">
-                    <img src="<?= ASSETS; ?>/img/logo.png" alt="logo" width="100px">
+                    <img src="<?= ASSETS; ?>/img/logo.jpg" alt="logo" width="100px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
