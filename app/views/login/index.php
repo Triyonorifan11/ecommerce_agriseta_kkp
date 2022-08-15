@@ -29,9 +29,9 @@
 
                                     </form>
                                 </div>
-                                <div class="card-footer text-center py-3">
+                                <!-- <div class="card-footer text-center py-3">
                                     <a class="small" href="password.html">Forgot Password?</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -40,6 +40,4 @@
         </div>
 
     </div>
-
-
 </div>
