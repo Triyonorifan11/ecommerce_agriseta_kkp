@@ -40,68 +40,64 @@
     <div class="container">
         <h1 class="text-success">Profil Pemilik</h1>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="table-responsive">
                     <table class="table">
                         <tbody>
                             <tr>
                                 <td>Nama Pemilik</td>
                                 <td>:</td>
-                                <td>Syamsul Huda, SP</td>
+                                <td><?= $data['profile']['nama_pemilik']; ?></td>
                             </tr>
                             <tr>
                                 <td>Nama Perusahaan</td>
                                 <td>:</td>
-                                <td>CV BAGUS AGRISETA MANDIRI</td>
+                                <td><?= $data['profile']['nama_perusahaan']; ?></td>
                             </tr>
                             <tr>
                                 <td>Bidang Usaha</td>
                                 <td>:</td>
                                 <td>
-                                    <ol>
-                                        <li>Industri Pengolahan Buah dan Sayur</li>
-                                        <li>Wisata Edukasi Kunjungan Industri</li>
-                                        <li>Wisata Petik Buah Apel, Strawberry, Jambu Kristal, dan Jeruk</li>
-                                    </ol>
+                                    <?= $data['profile']['bidang_usaha']; ?>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Alamat Kantor</td>
                                 <td>:</td>
-                                <td>Jl. Kopral Kasdi No.2 Bumiaji, Kota Wisata Batu, Jawa Timur</td>
+                                <td><?= $data['profile']['alamat_kantor']; ?></td>
                             </tr>
                             <tr>
                                 <td>No Tlp/HP</td>
                                 <td>:</td>
-                                <td>(0341) 599659 / 081233202006</td>
+                                <td><?= $data['profile']['no_telp']; ?> / <?= $data['profile']['no_hp']; ?></td>
                             </tr>
                             <tr>
                                 <td>Kode Pos</td>
                                 <td>:</td>
-                                <td>65331</td>
+                                <td><?= $data['profile']['kode_pos']; ?></td>
                             </tr>
                             <tr>
                                 <td>Email</td>
                                 <td>:</td>
-                                <td>bagusagriseta2001@gmail.com</td>
+                                <td><?= $data['profile']['email']; ?>m</td>
                             </tr>
                             <tr>
                                 <td>Luas Tanah</td>
                                 <td>:</td>
-                                <td>750 m2</td>
+                                <td><?= $data['profile']['luas_tanah']; ?> m2</td>
                             </tr>
                             <tr>
                                 <td>Luas Bangunan</td>
                                 <td>:</td>
-                                <td>600 m2</td>
+                                <td><?= $data['profile']['luas_bangunan']; ?> m2</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
             </div>
-            <div class="col-lg-6 d-flex justify-content-center">
-                <img src="<?= ASSETS; ?>/img/profile.jpg" alt="" height="60%">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <img src="<?= ASSETS; ?>/img/profile/<?= $data['profile']['foto_pemilik']; ?>" alt="<?= $data['profile']['foto_pemilik']; ?>" width="100%" height="100%">
             </div>
         </div>
     </div>

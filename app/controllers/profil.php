@@ -7,7 +7,8 @@ class profil extends Controller
         $data['judul'] = 'Profil';
         $data['navbar'] = 'Profil';
 
-        $data['getLabel'] = $this->model('Postingan_Model')->getAllLabel();
+
+        $data['profile'] = $this->model('Profile_Model')->getProfileSinggle();
 
         $this->view('templates/header', $data);
         $this->view('profil/index', $data);

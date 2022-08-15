@@ -70,7 +70,7 @@ class Profile_Model
     {
         $nama_pemilik = htmlspecialchars($data['nama_pemilik']);
         $nama_perusahaan = htmlspecialchars($data['nama_perusahaan']);
-        $bidang_usaha = htmlspecialchars($data['bidang_usaha']);
+        $bidang_usaha = $data['bidang_usaha'];
         $alamat_kantor = htmlspecialchars($data['alamat_kantor']);
         $no_telp = htmlspecialchars($data['no_telp']);
         $no_hp = htmlspecialchars($data['no_hp']);
