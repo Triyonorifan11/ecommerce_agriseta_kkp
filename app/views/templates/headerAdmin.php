@@ -67,10 +67,14 @@ if (!isset($_SESSION['login'])) {
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <div class="sb-sidenav-menu-heading">Admin</div>
                         <a class="nav-link <?= $data['navbar'] == "dashboard" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
+                        </a>
+                        <a class="nav-link <?= $data['navbar'] == "profile" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin/profile">
+                            <div class="sb-nav-link-icon"><i class="fas fa-solid fa-id-card"></i></div>
+                            Profile company
                         </a>
                         <div class="sb-sidenav-menu-heading">Data Admin & Customer</div>
                         <a class="nav-link <?= $data['navbar'] == "pengguna" ? "active" : ""; ?>" href="<?= BASEURL; ?>/admin/dataPengguna">

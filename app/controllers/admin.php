@@ -20,6 +20,35 @@ class Admin extends Controller
         $this->view('templates/footerAdmin');
     }
 
+
+    public function profile()
+    {
+        $data['judul'] = "Profile";
+        $data['navbar'] = "profile";
+
+        $data['profile'] = $this->model('Profile_Model')->getProfileSinggle();
+
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/profile', $data);
+        $this->view('templates/footerAdmin');
+    }
+
+    public function updateProfile()
+    {
+
+        if ($this->model('Profile_Model')->updateProfile($_POST) > 0) {
+            FlashMessage::setSweetAlrert('Berhasil', 'Profile berhasil diperbarui', 'success');
+            header('Location: ' . BASEURL . '/admin/profile');
+            exit;
+        } else {
+
+            FlashMessage::setSweetAlrert('Gagal', 'Profile gagal diperbarui', 'error');
+            header('Location: ' . BASEURL . '/admin/profile');
+            exit;
+        }
+    }
+
+
     // ============================halaman anggota pengguna Admin===============================
     public function dataPengguna()
     {
@@ -43,7 +72,7 @@ class Admin extends Controller
             exit;
         } else {
 
-            FlashMessage::setSweetAlrert('Gagal', 'Profile gagal ditambahkan', 'error');
+            FlashMessage::setSweetAlrert('Gagal', 'Data gagal ditambahkan', 'error');
             header('Location: ' . BASEURL . '/admin/dataPengguna');
             exit;
         }
