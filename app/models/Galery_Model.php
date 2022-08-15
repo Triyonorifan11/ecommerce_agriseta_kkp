@@ -35,23 +35,23 @@ class Galery_Model
     public function inserGalery($data)
     {
         date_default_timezone_set('Asia/Jakarta');
-        $nama = htmlspecialchars($data['nama_galery']);
+
         $label = htmlspecialchars($data['label_postingan']);
         $foto = $this->uploadFoto();
         $tgl_update = date('Y-m-d H:i:s');
 
-        $enkripsi = uniqid() . md5($nama);
+        $enkripsi = uniqid() . md5($label);
 
         if (!$foto) {
             return false;
         }
 
         $query = "INSERT INTO {$this->table} VALUES 
-        ('', :nama_galery, :label_postingan, :foto, :tgl_update, :enkripsi)
+        ('', :label_postingan, :foto, :tgl_update, :enkripsi)
         ";
 
         $this->db->query($query);
-        $this->db->bind('nama_galery', $nama);
+
         $this->db->bind('label_postingan', $label);
         $this->db->bind('foto', $foto);
         $this->db->bind('tgl_update', $tgl_update);

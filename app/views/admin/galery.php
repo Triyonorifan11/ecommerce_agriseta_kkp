@@ -11,7 +11,6 @@
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Foto</th>
-                        <th scope="col">Nama Galery</th>
                         <th scope="col">Label</th>
                         <th scope="col">Tanggal Update</th>
                         <th scope="col">Actions</th>
@@ -23,7 +22,6 @@
                         <tr>
                             <td><?= $i++; ?></td>
                             <td><img src="<?= ASSETS; ?>/img/galery/<?= $galery['foto']; ?>" alt="foto_galery" width="150px"></td>
-                            <td><?= $galery['nama_galery']; ?></td>
                             <td><span class="badge text-bg-primary"><?= $galery['label_postingan']; ?></span></td>
                             <td><?= $galery['tgl_update']; ?></td>
                             <td>

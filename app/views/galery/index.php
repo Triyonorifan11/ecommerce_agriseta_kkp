@@ -21,7 +21,7 @@
                 <a href="<?= BASEURL; ?>/detail/<?= $galery['id_label']; ?>" class="text-decoration-none">
                     <div class="card border-success mb-3">
                         <div class="card-body text-success">
-                            <h5 class="card-title"><?= $galery['label_postingan']; ?></h5>
+                            <h5 class="card-title d-flex justify-content-center flex-wrap"><?= $galery['label_postingan']; ?></h5>
                         </div>
                     </div>
                 </a>

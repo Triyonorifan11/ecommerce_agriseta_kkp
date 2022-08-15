@@ -10,10 +10,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-lg-7">
-                    <div class="mb-3">
-                        <label for="namapostingan" class="form-label">Nama Foto</label>
-                        <input type="text" required name="nama_galery" class="form-control" id="namapostingan" placeholder="Nama foto">
-                    </div>
+
                     <div class="mb-3">
                         <label for="namapostingan" class="form-label">Label Galery</label>
                         <div class="input-group">
