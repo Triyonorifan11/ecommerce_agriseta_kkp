@@ -17,6 +17,22 @@ class Galery_Model
         return $this->db->resultSet();
     }
 
+    public function getAllGaleryByLabel($labelName)
+    {
+        $query = "SELECT * FROM {$this->table} WHERE label_postingan = :label_postingan";
+        $this->db->query($query);
+        $this->db->bind('label_postingan', $labelName);
+        return $this->db->resultSet();
+    }
+
+    public function getTotalGaleryByLabel($label_postingan)
+    {
+        $query = "SELECT COUNT(*) FROM {$this->table} WHERE label_postingan = :label_postingan";
+        $this->db->query($query);
+        $this->db->bind('label_postingan', $label_postingan);
+        return $this->db->totaldata();
+    }
+
     public function getGaleryByLabelPostinganDistinc()
     {
         $query = "SELECT DISTINCT label_postingan from {$this->table}";
