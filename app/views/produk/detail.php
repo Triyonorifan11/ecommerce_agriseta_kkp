@@ -21,7 +21,7 @@
 <div class="container">
     <div class="col-12 mt-5">
         <div class="d-flex justify-content-center">
-            <img src="<?= ASSETS; ?>/img/produk/<?= $data['produk']['foto_produk']; ?>" alt="foto produk" width="40%">
+            <img src="<?= ASSETS; ?>/img/produk/<?= $data['produk']['foto_produk']; ?>" alt="foto produk" width="90%">
         </div>
         <hr>
         <p>Tanggal Update : <?= $data['produk']['tgl_update']; ?></p>
