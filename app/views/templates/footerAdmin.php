@@ -3,7 +3,7 @@
 <footer class="py-4 bg-light mt-auto">
     <div class="container-fluid px-4">
         <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Mitra Kerja sama UPN Veteran Jawa Timur 2022</div>
+            <div class="text-muted">Copyright &copy; Mitra Kerja sama UPN Veteran Jawa Timur 2022 | <span>Created by </span><a href="https://www.instagram.com/t_riyo.id/" target="_blank" class="text-decoration-none">Riyo</a></div>
 
         </div>
     </div>

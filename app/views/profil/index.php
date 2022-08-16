@@ -79,7 +79,7 @@
                             <tr>
                                 <td>Email</td>
                                 <td>:</td>
-                                <td><?= $data['profile']['email']; ?>m</td>
+                                <td><?= $data['profile']['email']; ?></td>
                             </tr>
                             <tr>
                                 <td>Luas Tanah</td>

@@ -81,7 +81,7 @@
 
              <div class="d-flex justify-content-center mb-3">
                  <small>
-                     Copyright &copy; 2022 | Mitra Kerja Sama UPN Veteran Jawa Timur 2022 <span class="text-white-50">Created by </span><a href="#" target="_blank" class="text-decoration-none">Riyo</a>
+                     Copyright &copy; 2022 | Mitra Kerja Sama UPN Veteran Jawa Timur 2022 <span class="text-white-50">Created by </span><a href="https://www.instagram.com/t_riyo.id/" target="_blank" class="text-decoration-none">Riyo</a>
                  </small>
              </div>
          </div>
